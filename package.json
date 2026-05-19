@@ -1,0 +1,16 @@
+{
+  "name": "nodejs2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
