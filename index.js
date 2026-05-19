@@ -11,14 +11,15 @@ const cli = createInterface({
 
 
 cli.question("Input tanggal : ", function (input) {
+    console.clear()
     let usemoment = withMoment(input);
     let notUse = changeDate(input)
     if (usemoment !== notUse) {
         console.log("Format tanggal salah");
         return; 
     }
-    console.clear()
     console.log(`\nResponse change date whit moment :`, usemoment);
     console.log("\n")
     console.log(`Response change date whitout moment :`, notUse)
-});
+})
+cli.close;
