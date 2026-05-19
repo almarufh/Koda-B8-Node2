@@ -9,10 +9,8 @@ export default [
       globals: globals.node 
     },
     rules: {
-      semi: ["error", "always"], // Boleh tanpa kutip
-      indent: ["error", 2],      // Boleh tanpa kutip
-      
-      // WAJIB pakai kutip karena ada tanda strip (-)
+      semi: ["error", "always"], 
+      indent: ["error", 2],    
       "brace-style": ["error", "1tbs", { allowSingleLine: false }],
       "object-curly-newline": ["error", {
         ObjectExpression: { multiline: true, minProperties: 2 },
