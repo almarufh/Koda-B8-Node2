@@ -1,6 +1,7 @@
+console.clear()
 import changeDate from "./src/manual.js";
 import withMoment from "./src/moment.js"
-import { createInterface } from "node:readline";
+import {createInterface} from "node:readline";
 
 const cli = createInterface({
   input: process.stdin,
@@ -10,8 +11,14 @@ const cli = createInterface({
 
 
 cli.question("Input tanggal : ", function (input) {
+    let usemoment = withMoment(input);
+    let notUse = changeDate(input)
+    if (usemoment !== notUse) {
+        console.log("Format tanggal salah");
+        return; 
+    }
     console.clear()
-    console.log(`\nResponse change date whit moment :`, withMoment(input));
+    console.log(`\nResponse change date whit moment :`, usemoment);
     console.log("\n")
-    console.log(`Response change date whitout moment :`, changeDate(input))
+    console.log(`Response change date whitout moment :`, notUse)
 });
