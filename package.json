@@ -4,15 +4,22 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
     "lint": "eslint index.js src/*.js",
     "fix": "eslint index.js src/*.js --fix"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "almarufh",
+  "license": "MIT",
   "type": "module",
-  "description": "",
+  "description": "Convert date format date DD-MM-YYYY to DD/MM/YYYY",
+  "bugs": {
+    "url": "https://github.com/almarufh/Koda-B8-JavaScript2/issues"
+  },
+  "homepage": "https://github.com/almarufh/Koda-B8-JavaScript2#readme",
   "dependencies": {
+    "@types/node": "^25.9.1",
     "moment": "^2.30.1"
   },
   "devDependencies": {
